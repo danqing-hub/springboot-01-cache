@@ -11,7 +11,8 @@ import org.springframework.stereotype.Service;
  * @date 2020/4/6-13:19
  */
 @Service
-@CacheConfig(cacheNames = "emp")
+@CacheConfig(cacheNames = "emp",cacheManager = "empCacheManager")//下面的缓存注解就不需要指定value了
+
 public class EmployeeService {
 
     @Autowired

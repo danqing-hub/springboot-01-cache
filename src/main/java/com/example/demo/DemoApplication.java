@@ -9,6 +9,10 @@ import org.springframework.cache.annotation.EnableCaching;
  * 搭建基本环境
  * 1、导入数据库文件
  * 2、创建javaBean 封装数据
+ * 。。。。。。
+ * 缓存默认使用的是ConcurrentMapCacheManager创建的ConcurrentMapCache组件，将数据保存在ConcurrentMap<Object, Object>中。
+ * 开发中经常使用缓存中间件：redis、memcached、ehcache；
+ *
  */
 @MapperScan("com.example.demo.mapper")
 @SpringBootApplication

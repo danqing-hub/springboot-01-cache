@@ -1,12 +1,14 @@
 package com.example.demo.bean;
 
+import java.io.Serializable;
+
 /**
  * @author 丹青
  * @date 2020/4/5-14:54
  */
-public class Employee {
+public class Employee implements Serializable {
     private Integer id;
-    private String lastName;;
+    private String lastName;
     private String email;
     private Integer gender;//性别 1男 0女
     private Integer dId;
